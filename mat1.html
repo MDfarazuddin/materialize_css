@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <title>mat1</title>
     <style>
@@ -24,14 +23,28 @@
   </head>
   <body>
       <div class="container">
-        <h4>button</h4>
-          <a href="#" class="btn-small ">"button1"</a>
-          <a href="#" class="btn blue lighten-1">"button2"</a>
-          <a href="#" class="btn-floating pulse red ">floating button</a>
-          <a href="#" class="">"button4"</a>
-          <a href="#" class="">"button5"</a>
-          <h4>"other elements"</h4>
-          <div class="">"i am a div tag"</div>
+        <h4>Feature</h4>
+            <a href="#test" class="btn orange modal-trigger">Do it!</a>
+            <div class="modal" id="test">
+              <div class="modal-content">
+                <h4>Sorry! :P Site under development</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia hic rem ut illo corporis. Numquam aliquam, non cupiditate deserunt, consequuntur magni! Quis laborum velit sunt a commodi sit, nihil ex.
+                </p>
+                <div class="modal-footer">
+                  <a href="" class="modal-close btn orange center">
+                    ok
+                  </a>
+                </div>
+              </div>
+            </div>
       </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+          $(document).ready(function(){
+            $('.modal').modal();
+          });
+      </script>
   </body>
 </html>
